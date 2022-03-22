@@ -1,0 +1,951 @@
+execve("/usr/bin/python", ["python", "./hello.py"], 0x7ffd84015018 /* 68 vars */) = 0
+brk(NULL)                               = 0x55f6a4f3b000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7fff1d8018a0) = -1 EINVAL (無効な引数です)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=136187, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 136187, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe081699000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libpython3.10.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \220\5\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=3883816, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe081697000
+mmap(NULL, 3909496, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe0812dc000
+mprotect(0x7fe081335000, 3297280, PROT_NONE) = 0
+mmap(0x7fe081335000, 2285568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x59000) = 0x7fe081335000
+mmap(0x7fe081563000, 1007616, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x287000) = 0x7fe081563000
+mmap(0x7fe08165a000, 225280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x37d000) = 0x7fe08165a000
+mmap(0x7fe081691000, 22392, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe081691000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\324\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0@\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 80, 848) = 80
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\205vn\235\204X\261n\234|\346\340|q,\2"..., 68, 928) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2463384, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2136752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe0810d2000
+mprotect(0x7fe0810fe000, 1880064, PROT_NONE) = 0
+mmap(0x7fe0810fe000, 1531904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7fe0810fe000
+mmap(0x7fe081274000, 344064, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a2000) = 0x7fe081274000
+mmap(0x7fe0812c9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f6000) = 0x7fe0812c9000
+mmap(0x7fe0812cf000, 51888, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe0812cf000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=16488, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe0810cd000
+mmap(0x7fe0810ce000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fe0810ce000
+mmap(0x7fe0810cf000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe0810cf000
+mmap(0x7fe0810d0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe0810d0000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=15632, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe0810c8000
+mmap(0x7fe0810c9000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fe0810c9000
+mmap(0x7fe0810ca000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe0810ca000
+mmap(0x7fe0810cb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe0810cb000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=15464, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 16400, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe0810c3000
+mmap(0x7fe0810c4000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fe0810c4000
+mmap(0x7fe0810c5000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe0810c5000
+mmap(0x7fe0810c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe0810c6000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1061880, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 946752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe080fdb000
+mmap(0x7fe080feb000, 499712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7fe080feb000
+mmap(0x7fe081065000, 376832, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7fe081065000
+mmap(0x7fe0810c1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe5000) = 0x7fe0810c1000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe080fd9000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe080fd6000
+arch_prctl(ARCH_SET_FS, 0x7fe080fd6740) = 0
+set_tid_address(0x7fe080fd6a10)         = 20008
+set_robust_list(0x7fe080fd6a20, 24)     = 0
+rseq(0x7fe080fd70e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7fe0812c9000, 12288, PROT_READ) = 0
+mprotect(0x7fe0810c1000, 4096, PROT_READ) = 0
+mprotect(0x7fe0810c6000, 4096, PROT_READ) = 0
+mprotect(0x7fe0810cb000, 4096, PROT_READ) = 0
+mprotect(0x7fe0810d0000, 4096, PROT_READ) = 0
+mprotect(0x7fe08165a000, 20480, PROT_READ) = 0
+mprotect(0x55f6a3b01000, 4096, PROT_READ) = 0
+mprotect(0x7fe0816f0000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7fe081699000, 136187)          = 0
+getrandom("\x33\xe4\xfd\xe7\xb0\x57\x59\xdb", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x55f6a4f3b000
+brk(0x55f6a4f5c000)                     = 0x55f6a4f5c000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4121216, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 4121216, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe080be7000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/gconv/gconv-modules.cache", O_RDONLY) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/gconv/gconv-modules", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3808, ...}, AT_EMPTY_PATH) = 0
+read(3, "# GNU libc iconv configuration.\n"..., 4096) = 3808
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/gconv/gconv-modules.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x55f6a4f3ee50 /* 3 entries */, 32768) = 96
+openat(AT_FDCWD, "/usr/lib/gconv/gconv-modules.d/gconv-modules-extra.conf", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=53974, ...}, AT_EMPTY_PATH) = 0
+read(4, "# GNU libc iconv configuration.\n"..., 4096) = 4096
+read(4, "B1002//\tJUS_I.B1.002//\nmodule\tJU"..., 4096) = 4096
+read(4, "59-5//\nalias\tISO_8859-5//\t\tISO-8"..., 4096) = 4096
+read(4, "59-16//\t\tINTERNAL\t\tISO8859-16\t1\n"..., 4096) = 4096
+read(4, "-SE-A\t1\nmodule\tINTERNAL\t\tEBCDIC-"..., 4096) = 4096
+read(4, "97\t\t1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcos"..., 4096) = 4096
+read(4, "1\n\n#\tfrom\t\t\tto\t\t\tmodule\t\tcost\nal"..., 4096) = 4096
+read(4, "6//\t\tIBM1046//\nalias\tCP1046//\t\tI"..., 4096) = 4096
+read(4, "\tto\t\t\tmodule\t\tcost\nalias\tRUSCII/"..., 4096) = 4096
+brk(0x55f6a4f7d000)                     = 0x55f6a4f7d000
+read(4, "03//\nmodule\tCSN_369103//\t\tINTERN"..., 4096) = 4096
+read(4, "\tmodule\t\tcost\nalias\tISO-IR-8-1//"..., 4096) = 4096
+read(4, "IBM1156\t\t1\n\n#\tfrom\t\t\tto\t\t\tmodule"..., 4096) = 4096
+read(4, "\t\tIBM1166//\nalias\tCP1166//\t\tIBM1"..., 4096) = 4096
+read(4, "alias\tROMAN9//\t\tHP-ROMAN9//\nalia"..., 4096) = 726
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+getdents64(3, 0x55f6a4f3ee50 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+futex(0x7fe0812ce56c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getcwd("/home/ao/code/LinuxStructure/chapter01", 4096) = 39
+getrandom("\x21\x83\x0b\x29\xde\x7a\x5c\x03\xf4\xcb\x5b\xf9\xe9\x33\xd9\xa6\x3e\x74\x9b\xbe\xfd\x92\x69\xb2", 24, GRND_NONBLOCK) = 24
+brk(0x55f6a4fa3000)                     = 0x55f6a4fa3000
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe080ae7000
+brk(0x55f6a4fc4000)                     = 0x55f6a4fc4000
+newfstatat(AT_FDCWD, "/home/ao/.local/bin/python", 0x7fff1d801380, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/local/bin/python", 0x7fff1d801380, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/bin/python", {st_mode=S_IFREG|0755, st_size=14168, ...}, 0) = 0
+readlink("/usr/bin/python", "python3", 4096) = 7
+readlink("/usr/bin/python3", "python3.10", 4096) = 10
+readlink("/usr/bin/python3.10", 0x7fff1d7fc160, 4096) = -1 EINVAL (無効な引数です)
+openat(AT_FDCWD, "/usr/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/pyvenv.cfg", O_RDONLY) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/bin/Modules/Setup.local", 0x7fff1d7fd150, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/bin/lib/python3.10/os.py", 0x7fff1d7fd020, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/bin/lib/python3.10/os.pyc", 0x7fff1d7fd020, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/os.py", {st_mode=S_IFREG|0644, st_size=39514, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/bin/pybuilddir.txt", O_RDONLY) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/bin/lib/python3.10/lib-dynload", 0x7fff1d7fc1d0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe0809e7000
+sysinfo({uptime=9493, loads=[17344, 56320, 55488], totalram=3985817600, freeram=622993408, sharedram=758566912, bufferram=52068352, totalswap=0, freeswap=0, procs=740, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=309, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=309, ...}, AT_EMPTY_PATH) = 0
+brk(0x55f6a4fe5000)                     = 0x55f6a4fe5000
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 309
+lseek(3, -176, SEEK_CUR)                = 133
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 176
+close(3)                                = 0
+brk(0x55f6a4fe4000)                     = 0x55f6a4fe4000
+newfstatat(AT_FDCWD, "/usr/lib/python310.zip", 0x7fff1d7ffa20, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=176128, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python310.zip", 0x7fff1d7ff7c0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x55f6a4fc5690 /* 207 entries */, 32768) = 6888
+getdents64(3, 0x55f6a4fc5690 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7ffbc0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/__init__.abi3.so", 0x7fff1d7ffbc0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/__init__.so", 0x7fff1d7ffbc0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5620, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5620, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3907, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fff40)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3907, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0007\326ma\235Y\21\363\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3908) = 3907
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings/__init__.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5620, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fff40)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5620, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\" Standard \"encodings\" Package"..., 5621) = 5620
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/codecs.py", {st_mode=S_IFREG|0644, st_size=36672, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/codecs.py", {st_mode=S_IFREG|0644, st_size=36672, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/codecs.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=33179, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff0e0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=33179, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\356\242\343\354!\221\272\23\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 33180) = 33179
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/codecs.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=36672, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff0e0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=36672, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\" codecs -- Python Codec Regis"..., 36673) = 36672
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x55f6a4fceac0 /* 125 entries */, 32768) = 4224
+getdents64(3, 0x55f6a4fceac0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15677, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings/__pycache__/aliases.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10921, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fea10)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10921, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\203\270\360\275f\t\355\325\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 10922) = 10921
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings/aliases.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15677, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fea10)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=15677, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\" Encoding Aliases Support\n\n  "..., 15678) = 15677
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings/__pycache__/utf_8.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1597, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fff60)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1597, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\355\372\343\336\220\304\3219\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1598) = 1597
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/encodings/utf_8.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1005, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fff60)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1005, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\" Python 'utf-8' Codec\n\n\nWritt"..., 1006) = 1005
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x7fe0813bb9ed, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/io.py", {st_mode=S_IFREG|0644, st_size=4196, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/io.py", {st_mode=S_IFREG|0644, st_size=4196, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/io.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3663, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d800010)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3663, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\206\31\26\fqe\363y\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3664) = 3663
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/io.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4196, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d800010)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4196, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\"The io module provides the Py"..., 4197) = 4196
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/abc.py", {st_mode=S_IFREG|0644, st_size=6522, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/abc.py", {st_mode=S_IFREG|0644, st_size=6522, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/abc.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6751, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff1b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6751, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0%\7\314\310\31\357\r\272\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 6752) = 6751
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/abc.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6522, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff1b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6522, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Copyright 2007 Google, Inc. Al"..., 6523) = 6522
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (不正なシークです)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+dup(1)                                  = 3
+close(3)                                = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (不正なシークです)
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+dup(2)                                  = 3
+close(3)                                = 0
+newfstatat(2, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (不正なシークです)
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site.py", {st_mode=S_IFREG|0644, st_size=22587, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site.py", {st_mode=S_IFREG|0644, st_size=22587, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/site.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=17380, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d800010)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=17380, ...}, AT_EMPTY_PATH) = 0
+brk(0x55f6a5005000)                     = 0x55f6a5005000
+read(3, "o\r\r\n\3\0\0\0+\243?\305\2,,\235\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 17381) = 17380
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22587, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d800010)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22587, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\"Append module search paths fo"..., 22588) = 22587
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x55f6a5001000)                     = 0x55f6a5001000
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/os.py", {st_mode=S_IFREG|0644, st_size=39514, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/os.py", {st_mode=S_IFREG|0644, st_size=39514, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/os.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31556, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff1b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31556, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\345e\274Y\344\352\vB\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 31557) = 31556
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/os.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39514, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff1b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=39514, ...}, AT_EMPTY_PATH) = 0
+read(3, "r\"\"\"OS routines for NT or Posix "..., 39515) = 39514
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe0809c2000
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/stat.py", {st_mode=S_IFREG|0644, st_size=5485, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/stat.py", {st_mode=S_IFREG|0644, st_size=5485, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/stat.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4273, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fe350)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4273, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0!\343\254o\372\327\37\322\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4274) = 4273
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/stat.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5485, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fe350)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5485, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\"Constants/functions for inter"..., 5486) = 5485
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=31949, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=31949, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/_collections_abc.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32813, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fe350)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32813, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0f!\36_\316\374z$\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 32814) = 32813
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/_collections_abc.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31949, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fe350)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31949, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Copyright 2007 Google, Inc. Al"..., 31950) = 31949
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/posixpath.py", {st_mode=S_IFREG|0644, st_size=16222, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/posixpath.py", {st_mode=S_IFREG|0644, st_size=16222, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/posixpath.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10515, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fe350)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10515, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0'4(\7\224\330d\211\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 10516) = 10515
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/posixpath.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=16222, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fe350)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=16222, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\"Common operations on Posix pa"..., 16223) = 16222
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/genericpath.py", {st_mode=S_IFREG|0644, st_size=4975, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/genericpath.py", {st_mode=S_IFREG|0644, st_size=4975, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/genericpath.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3907, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fd4f0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3907, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\277\364\306\222\226\351d\230\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3908) = 3907
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/genericpath.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4975, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7fd4f0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4975, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\"\nPath operations common to mo"..., 4976) = 4975
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3128, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3128, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/_sitebuiltins.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3547, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff1b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3547, ...}, AT_EMPTY_PATH) = 0
+read(3, "o\r\r\n\3\0\0\0\"j\235\205\225\252\200\246\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3548) = 3547
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/_sitebuiltins.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3128, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff1b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3128, ...}, AT_EMPTY_PATH) = 0
+read(3, "\"\"\"\nThe objects used by the site"..., 3129) = 3128
+read(3, "", 1)                          = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/bin/pyvenv.cfg", 0x7fff1d7ffa70, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/pyvenv.cfg", 0x7fff1d7ffa70, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+geteuid()                               = 1000
+getuid()                                = 1000
+getegid()                               = 1001
+getgid()                                = 1001
+newfstatat(AT_FDCWD, "/home/ao/.local/lib/python3.10/site-packages", 0x7fff1d7ffc40, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x55f6a4fb4bb0 /* 237 entries */, 32768) = 9976
+getdents64(3, 0x55f6a4fb4bb0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages/distutils-precedence.pth", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=152, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff7c0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fff1d7ffa80)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+read(3, "import os; var = 'SETUPTOOLS_USE"..., 8192) = 152
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google_api_core-2.5.0-py3.10-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=539, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff7c0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fff1d7ffa80)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 539
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/types.py", {st_mode=S_IFREG|0644, st_size=10117, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/types.py", {st_mode=S_IFREG|0644, st_size=10117, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/types.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=9533, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fe6d0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=9533, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0FY1\265n\374`\205\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 9534) = 9533
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/types.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=10117, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fe6d0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=10117, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"\nDefine names for built-in ty"..., 10118) = 10117
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7fd9f0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/__init__.abi3.so", 0x7fff1d7fd9f0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/__init__.so", 0x7fff1d7fd9f0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=6089, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/__init__.py", {st_mode=S_IFREG|0644, st_size=6089, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=3805, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fdd70)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=3805, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0004\350\16\202OtS\240\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 3806) = 3805
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/__init__.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=6089, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fdd70)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=6089, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"A pure Python implementation "..., 6090) = 6089
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/warnings.py", {st_mode=S_IFREG|0644, st_size=19688, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/warnings.py", {st_mode=S_IFREG|0644, st_size=19688, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/warnings.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=13658, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fcf10)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=13658, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0\346\17\270V\37wD\24\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 13659) = 13658
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/warnings.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=19688, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fcf10)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=19688, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"Python part of the warnings s"..., 19689) = 19688
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(4, 0x55f6a4ff65e0 /* 15 entries */, 32768) = 488
+getdents64(4, 0x55f6a4ff65e0 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/util.py", {st_mode=S_IFREG|0644, st_size=11487, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/util.py", {st_mode=S_IFREG|0644, st_size=11487, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/__pycache__/util.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=9329, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fe610)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=9329, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0s\231\361\307\250\10\262~\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 9330) = 9329
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/util.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=11487, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fe610)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=11487, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"Utility code for constructing"..., 11488) = 11487
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1852, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/_abc.py", {st_mode=S_IFREG|0644, st_size=1852, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/__pycache__/_abc.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1971, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fd7b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1971, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0K\244\3166\5\231\366\4\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1972) = 1971
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/_abc.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1852, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fd7b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1852, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"Subset of importlib.abc used "..., 1853) = 1852
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/contextlib.py", {st_mode=S_IFREG|0644, st_size=25882, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/contextlib.py", {st_mode=S_IFREG|0644, st_size=25882, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/contextlib.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=20899, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fd7b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=20899, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0f3\331qk\320Jj\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 20900) = 20899
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/contextlib.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=25882, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fd7b0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=25882, ...}, AT_EMPTY_PATH) = 0
+brk(0x55f6a5024000)                     = 0x55f6a5024000
+read(4, "\"\"\"Utilities for with-statement "..., 25883) = 25882
+read(4, "", 1)                          = 0
+close(4)                                = 0
+brk(0x55f6a501d000)                     = 0x55f6a501d000
+brk(0x55f6a5017000)                     = 0x55f6a5017000
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/collections/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7fc5d0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/collections/__init__.abi3.so", 0x7fff1d7fc5d0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/collections/__init__.so", 0x7fff1d7fc5d0, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=51228, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=51228, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/collections/__pycache__/__init__.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=48455, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fc950)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=48455, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0[\375\306{\350\370s\240\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 48456) = 48455
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/collections/__init__.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=51228, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fc950)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=51228, ...}, AT_EMPTY_PATH) = 0
+read(4, "'''This module implements specia"..., 51229) = 51228
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/keyword.py", {st_mode=S_IFREG|0644, st_size=1061, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/keyword.py", {st_mode=S_IFREG|0644, st_size=1061, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/keyword.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=927, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fbaf0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=927, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0\247\34!\271j%\316w\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 928) = 927
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/keyword.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1061, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fbaf0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=1061, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"Keywords (from \"Grammar/pytho"..., 1062) = 1061
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/operator.py", {st_mode=S_IFREG|0644, st_size=10751, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/operator.py", {st_mode=S_IFREG|0644, st_size=10751, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/operator.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=13508, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fbaf0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=13508, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\09oo\247\22\246\307x\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 13509) = 13508
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/operator.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=10751, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fbaf0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=10751, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"\nOperator Interface\n\nThis mod"..., 10752) = 10751
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/reprlib.py", {st_mode=S_IFREG|0644, st_size=5267, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/reprlib.py", {st_mode=S_IFREG|0644, st_size=5267, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/reprlib.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=5250, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fbaf0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=5250, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0\374\267*\223\222\321\345\24\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 5251) = 5250
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/reprlib.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=5267, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fbaf0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=5267, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"Redo the builtin repr() (repr"..., 5268) = 5267
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/functools.py", {st_mode=S_IFREG|0644, st_size=38076, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/functools.py", {st_mode=S_IFREG|0644, st_size=38076, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/__pycache__/functools.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=28349, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fc950)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=28349, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0\5\325\267\325\323n !\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 28350) = 28349
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/functools.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=38076, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fc950)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=38076, ...}, AT_EMPTY_PATH) = 0
+brk(0x55f6a503c000)                     = 0x55f6a503c000
+read(4, "\"\"\"functools.py - Tools for work"..., 38077) = 38076
+read(4, "", 1)                          = 0
+close(4)                                = 0
+brk(0x55f6a5032000)                     = 0x55f6a5032000
+mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe0808c2000
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/machinery.py", {st_mode=S_IFREG|0644, st_size=831, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/importlib/machinery.py", {st_mode=S_IFREG|0644, st_size=831, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/__pycache__/machinery.cpython-310.pyc", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=944, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fe610)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=944, ...}, AT_EMPTY_PATH) = 0
+read(4, "o\r\r\n\3\0\0\0\226\224\251mbp\203\257\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 945) = 944
+read(4, "", 1)                          = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/importlib/machinery.py", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=831, ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TCGETS, 0x7fff1d7fe610)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(4, 0, SEEK_CUR)                   = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=831, ...}, AT_EMPTY_PATH) = 0
+read(4, "\"\"\"The machinery of importlib: f"..., 832) = 831
+read(4, "", 1)                          = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(4, 0x55f6a5011c50 /* 237 entries */, 32768) = 9976
+getdents64(4, 0x55f6a5011c50 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.abi3.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.py", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.pyc", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google_auth-1.34.0-py3.10-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=539, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff7c0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fff1d7ffa80)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 539
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.abi3.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.py", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.pyc", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages/googleapis_common_protos-1.53.0-py3.10-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1710, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff7c0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fff1d7ffa80)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 1710
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.abi3.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.py", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.pyc", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.abi3.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.py", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.pyc", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(4, 0x55f6a50184d0 /* 12 entries */, 32768) = 336
+getdents64(4, 0x55f6a50184d0 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/logging/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/logging/__init__.abi3.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/logging/__init__.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/logging/__init__.py", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/logging/__init__.pyc", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/logging", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/site-packages/protobuf-3.19.4-py3.10-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=539, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d7ff7c0)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fff1d7ffa80)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 539
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.cpython-310-x86_64-linux-gnu.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.abi3.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.so", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.py", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google/__init__.pyc", 0x7fff1d7feb30, 0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages/google", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/python3.10/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x55f6a5013c60 /* 78 entries */, 32768) = 4896
+getdents64(3, 0x55f6a5013c60 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/python3.10/site-packages", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/ao/code/LinuxStructure/chapter01/./hello.py", {st_mode=S_IFREG|0644, st_size=21, ...}, 0) = 0
+openat(AT_FDCWD, "/home/ao/code/LinuxStructure/chapter01/./hello.py", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d800e30)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, -22, SEEK_END)                 = -1 EINVAL (無効な引数です)
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/ao/code/LinuxStructure/chapter01/./hello.py", {st_mode=S_IFREG|0644, st_size=21, ...}, 0) = 0
+readlink("./hello.py", 0x7fff1d7f0780, 4096) = -1 EINVAL (無効な引数です)
+getcwd("/home/ao/code/LinuxStructure/chapter01", 1024) = 39
+readlink("/home/ao/code/LinuxStructure/chapter01/hello.py", 0x7fff1d7eff00, 1023) = -1 EINVAL (無効な引数です)
+openat(AT_FDCWD, "/home/ao/code/LinuxStructure/chapter01/./hello.py", O_RDONLY) = 3
+ioctl(3, FIOCLEX)                       = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_EMPTY_PATH) = 0
+ioctl(3, TCGETS, 0x7fff1d801730)        = -1 ENOTTY (デバイスに対する不適切なioctlです)
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_EMPTY_PATH) = 0
+read(3, "print(\"hello world\")\n", 4096) = 21
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "print(\"hello world\")\n", 4096) = 21
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+write(1, "hello world\n", 12)           = 12
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, {sa_handler=0x7fe0813bb9ed, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK, sa_restorer=0x7fe081114560}, 8) = 0
+munmap(0x7fe0809c2000, 151552)          = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
